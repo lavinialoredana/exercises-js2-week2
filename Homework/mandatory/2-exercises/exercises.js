@@ -7,14 +7,23 @@
  *
  * All of your HTML should go inside the Div tag with the id "content".
  *
- * <div id="content">
+ * <div id="main">
  *      <h1>{Name Here}</h1>
  *      <h2>{Job Here}</h2>
  *      .....
  * </div>
  */
+let allPeople = "";
+
 function exerciseOne(arrayOfPeople) {
-  let content = document.querySelector("#content");
+  let main = document.querySelector("#main");
+  for (let i = 0; i < arrayOfPeople.length; i++) {
+   let person = arrayOfPeople[i]
+   allPeople = allPeople + "<h1>" + person.name + "</h1><h2>" + person.job + "</h2>";
+   console.log(allPeople);
+  }
+ main.innerHTML = allPeople;
+
 }
 
 /**
@@ -24,8 +33,19 @@ function exerciseOne(arrayOfPeople) {
  * All of your HTML should go inside the Div tag with the id "content".
  *
  */
+
+let shoppingList = "";
+
 function exerciseTwo(shopping) {
   //Write your code in here
+  let main = document.querySelector("#main");
+  for ( let i = 0; i < shopping.length; i++) {
+    let shoppingItem = shopping[i]
+    shoppingList = shoppingList + "<ul>" + shoppingItem + "</ul>";
+    console.log(shoppingList);
+  }
+  main.innerHTML = allPeople + shoppingList;
+
 }
 
 /**
@@ -59,6 +79,8 @@ function exerciseTwo(shopping) {
 **/
 function exerciseThree(books) {
   //Write your code in here
+
+  
 }
 
 //
