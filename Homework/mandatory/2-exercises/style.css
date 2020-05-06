@@ -123,6 +123,14 @@ body {
 	background-color: red;
 }
 
+.alreadyRead {
+	background-color: #ce5f31;
+}
+
+.notRead {
+	background-color: aquamarine;
+}
+
 .addArticle {
 	margin-bottom: 10px;
 }
